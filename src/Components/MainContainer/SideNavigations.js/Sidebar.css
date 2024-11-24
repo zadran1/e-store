@@ -1,0 +1,103 @@
+
+.side-nav-bar{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100vh;
+  padding: 0px;
+  padding-top: 10px;
+  background-color:  rgb(240, 240, 240);
+}
+
+.side-nav a, .women-btn {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px 8px 0px 16px;  
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .side-nav a{
+    padding-left: 40px;
+    text-transform: capitalize;
+    transition: 0.3s;
+  }
+
+
+  .side-nav h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative; /* Required to position the ::after element */
+  }
+
+  .side-nav h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    position: relative;
+    text-transform: uppercase;
+
+  }
+  
+  .side-nav h4::after {
+    content: ""; /* Required to display the pseudo-element */
+    display: block; /* Makes the pseudo-element act like a block-level element */
+    width: 30%; /* Underline spans half the width of the heading */
+    height: 3px; /* Thickness of the underline */
+    background-color: rgb(167, 29, 29); /* Color of the underline */
+    position: absolute; /* Position it relative to the h4 element */
+    bottom: 1; /* Align the underline to the bottom of the h4 */
+    left: 10px; /* Matches the h4's padding-left */
+    
+  }
+  .side-nav h3::after {
+    content: ""; /* Required to display the pseudo-element */
+    display: block; /* Makes the pseudo-element act like a block-level element */
+    width: 40%; /* Underline spans half the width of the heading */
+    height: 3px; /* Thickness of the underline */
+    background-color: rgb(167, 29, 29); /* Color of the underline */
+    position: absolute; /* Position it relative to the h4 element */
+    bottom: 1; /* Align the underline to the bottom of the h4 */
+    left: 10px; /* Matches the h4's padding-left */
+    
+  }
+  
+  .women-btn{
+    color: rgb(77, 70, 70);
+    /* padding-right: 0px;
+    border: 0.1px solid rgb(70, 69, 69);
+    border-width: 0px 0 1px 0; */
+  }
+
+.side-nav a:hover{
+    color:#23695a;
+    transform:scale(1.2);
+    opacity:1;
+   
+}
+
+/* .active {
+    background-color:#23695a ;
+    color: white;
+  } */
+
+.fa-caret-down{
+    padding-right: 8px;
+    float: right;
+
+}
+
